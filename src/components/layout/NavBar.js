@@ -14,8 +14,8 @@ function NavBar() {
             <Container>
                 <Link to="/"><img src={logo} alt="Logo do FitScore"/></Link>
                 <ul className={styles.list}>
-                    <li className={styles.item}><NavLink to="/" style={({ isActive }) => ({ color: isActive ? "#2A3F22" : "#424242" }, {fontWeight: isActive ? "700" : "400"})}>Início</NavLink></li>
-                    <li className={styles.item}><NavLink to="/menu" style={({ isActive }) => ({ color: isActive ? "#2A3F22" : "#424242" }, {fontWeight: isActive ? "700" : "400"})}>Cardápio</NavLink></li>
+                    <li className={styles.item}><NavLink to="/" style={({ isActive }) => ({ color: isActive ? "#2A3F22" : "#424242" , fontWeight: isActive ? "700" : "400"})}>Início</NavLink></li>
+                    <li className={styles.item}><NavLink to="/menu" style={({ isActive }) => ({ color: isActive ? "#2A3F22" : "#424242" , fontWeight: isActive ? "700" : "400"})}>Cardápio</NavLink></li>
                 </ul>
                 <Link to="/"><img src={icon} alt="Ícone de usuário"></img></Link>
             </Container>
