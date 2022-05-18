@@ -1,3 +1,5 @@
+import styles from './Speak.module.css'
+
 function Speak() {
     return (
         <div>

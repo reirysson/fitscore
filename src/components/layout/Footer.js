@@ -11,11 +11,11 @@ function Footer() {
         <Container>
         <div>
             <h1> &copy; FitScore </h1>
-                <div className={styles.footer_menu}>
+                <nav className={styles.footer_menu}>
                     <Link to="/speak">Fale conosco</Link>
                     <Link to="/company">Quem somos</Link>
                     <Link to="/about">Sobre</Link>
-                </div>
+                </nav>
         </div>
         <p className={styles.down}>FitScore. Todos os direitos reservados</p>
         <div className={styles.footer_social}>
@@ -27,7 +27,6 @@ function Footer() {
             </ul>
         </div> 
         </Container>
-          
     </footer>
     )
 }

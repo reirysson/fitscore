@@ -5,3 +5,5 @@ function Company(){
         </div>
     )
 }
+
+export default Company
