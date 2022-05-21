@@ -9,7 +9,6 @@ function Menu(){
     return (
         <div>
             <div className={styles.menu_superior}>
-                <FiSearch />
                 <input type="text" id="name" name="name" placeholder="Pesquisar alimento na tabela"></input>
                 <button onClick={() => setButtonPopup(true)}>Adicionar alimento</button>
             </div>
