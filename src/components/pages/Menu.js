@@ -1,5 +1,4 @@
 import styles from './Menu.module.css'
-import { FiSearch } from 'react-icons/fi'
 import { useState } from 'react'
 import AddFood from './AddFood'
 

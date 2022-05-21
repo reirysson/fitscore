@@ -1,0 +1,10 @@
+{
+    "alimentos": [
+    {
+        "nome": "Arroz",
+        "quantidade": "100",
+        "calorias": "200",
+        "hora": "cafe"
+    }
+    ]
+}
