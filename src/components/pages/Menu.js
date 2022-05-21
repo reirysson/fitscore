@@ -1,9 +1,19 @@
 import styles from './Menu.module.css'
+import { FiSearch } from 'react-icons/fi'
+import { useState } from 'react'
+import AddFood from './AddFood'
 
 function Menu(){
+    const [buttonPopup, setButtonPopup] = useState(false)
+
     return (
         <div>
-            <p>Aqui é o Cardápio</p>
+            <div className={styles.menu_superior}>
+                <FiSearch />
+                <input type="text" id="name" name="name" placeholder="Pesquisar alimento na tabela"></input>
+                <button onClick={() => setButtonPopup(true)}>Adicionar alimento</button>
+            </div>
+            <AddFood acionar={buttonPopup} setAcionar={setButtonPopup}/> 
         </div>
     )
 }

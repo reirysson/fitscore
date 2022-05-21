@@ -1,0 +1,36 @@
+.menu_superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5em;
+}
+
+.menu_superior input {
+    position: absolute;
+    width: 858px;
+    height: 52px;
+    left: 150px;
+    top: 110px;
+    border-radius: 10px;
+}
+
+.menu_superior button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    position: absolute;
+    width: 252px;
+    height: 52px;
+    left: 1038px;
+    top: 110px;
+    background-color: #7DD956;
+    box-shadow: 0px 2px 16px rgba(11, 11, 11, 0.1);
+    border-radius: 10px;
+}
+
+.menu_superior button:hover {
+    cursor: pointer;
+}
