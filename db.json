@@ -1,10 +1,121 @@
 {
-    "alimentos": [
+  "alimentos": [
     {
-        "nome": "Arroz",
-        "quantidade": "100",
-        "calorias": "200",
-        "hora": "cafe"
+      "nome": "arroz",
+      "quantidade": "10",
+      "calorias": "20",
+      "horario": {
+        "id": "1",
+        "name": "Café da manhã"
+      },
+      "fitscore": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "fitscore": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "fitscore": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "fitscore": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "fitscore": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "fitscore": 0,
+      "services": [],
+      "id": 6
+    },
+    {
+      "fitscore": 0,
+      "services": [],
+      "id": 7
+    },
+    {
+      "fitscore": 0,
+      "services": [],
+      "id": 8
+    },
+    {
+      "fitscore": 0,
+      "services": [],
+      "id": 9
+    },
+    {
+      "fitscore": 0,
+      "services": [],
+      "id": 10
+    },
+    {
+      "fitscore": 0,
+      "services": [],
+      "id": 11
+    },
+    {
+      "nome": "teste",
+      "quantidade": "100",
+      "calorias": "150",
+      "horario": {
+        "id": "1",
+        "name": "Café da manhã"
+      },
+      "fitscore": 0,
+      "services": [],
+      "id": 12
+    },
+    {
+      "nome": "arroz",
+      "quantidade": "100",
+      "calorias": "150",
+      "horario": {
+        "id": "3",
+        "name": "Almoço"
+      },
+      "fitscore": 0,
+      "services": [],
+      "id": 13
+    },
+    {
+      "fitscore": 0,
+      "services": [],
+      "id": 14
     }
-    ]
+  ],
+  "horarios": [
+    {
+      "id": 1,
+      "name": "Café da manhã"
+    },
+    {
+      "id": 2,
+      "name": "Lanche da manhã"
+    },
+    {
+      "id": 3,
+      "name": "Almoço"
+    },
+    {
+      "id": 4,
+      "name": "Lanche da tarde"
+    },
+    {
+      "id": 5,
+      "name": "Jantar"
+    },
+    {
+      "id": 6,
+      "name": "Ceia"
+    }
+  ]
 }
