@@ -2,6 +2,7 @@ import styles from './Menu.module.css'
 import { useState } from 'react'
 import FoodForm from './FoodForm'
 import { useNavigate } from 'react-router-dom'
+import Table from './Table'
 
 function Menu(){
     const [buttonPopup, setButtonPopup] = useState(false)
@@ -33,7 +34,8 @@ function Menu(){
                 <input type="text" id="name" name="name" placeholder="Pesquisar alimento na tabela"></input>
                 <button onClick={() => setButtonPopup(true)}>Adicionar alimento</button>
             </div>
-            <FoodForm acionar={buttonPopup} handleSubmit={createAlimento}  setAcionar={setButtonPopup}/> 
+            <FoodForm acionar={buttonPopup} handleSubmit={createAlimento}  setAcionar={setButtonPopup}/>
+            <Table /> 
         </div>
     )
 }

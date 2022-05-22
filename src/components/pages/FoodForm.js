@@ -8,7 +8,6 @@ function FoodForm({handleSubmit, alimentoData, acionar}) {
     const [horarios, setHorarios] = useState([])
     const [alimento, setAlimento] = useState(alimentoData || {})
 
-
     useEffect(() => {
         fetch('http://localhost:5000/horarios', {
             method: 'GET',

@@ -2,8 +2,8 @@
   "alimentos": [
     {
       "nome": "arroz",
-      "quantidade": "10",
-      "calorias": "20",
+      "quantidade": "1000",
+      "calorias": "50",
       "horario": {
         "id": "1",
         "name": "Café da manhã"
@@ -13,83 +13,52 @@
       "id": 1
     },
     {
+      "nome": "feijão",
+      "quantidade": "2000",
+      "calorias": "60",
+      "horario": {
+        "id": "2",
+        "name": "Lanche da manhã"
+      },
       "fitscore": 0,
       "services": [],
       "id": 2
     },
     {
-      "fitscore": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "fitscore": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "fitscore": 0,
-      "services": [],
-      "id": 5
-    },
-    {
-      "fitscore": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "fitscore": 0,
-      "services": [],
-      "id": 7
-    },
-    {
-      "fitscore": 0,
-      "services": [],
-      "id": 8
-    },
-    {
-      "fitscore": 0,
-      "services": [],
-      "id": 9
-    },
-    {
-      "fitscore": 0,
-      "services": [],
-      "id": 10
-    },
-    {
-      "fitscore": 0,
-      "services": [],
-      "id": 11
-    },
-    {
-      "nome": "teste",
-      "quantidade": "100",
-      "calorias": "150",
-      "horario": {
-        "id": "1",
-        "name": "Café da manhã"
-      },
-      "fitscore": 0,
-      "services": [],
-      "id": 12
-    },
-    {
       "nome": "arroz",
       "quantidade": "100",
-      "calorias": "150",
+      "calorias": "500",
       "horario": {
         "id": "3",
         "name": "Almoço"
       },
       "fitscore": 0,
       "services": [],
-      "id": 13
+      "id": 3
     },
     {
+      "nome": "alface",
+      "quantidade": "100",
+      "calorias": "500",
+      "horario": {
+        "id": "3",
+        "name": "Almoço"
+      },
       "fitscore": 0,
       "services": [],
-      "id": 14
+      "id": 4
+    },
+    {
+      "nome": "carne",
+      "quantidade": "100",
+      "calorias": "50",
+      "horario": {
+        "id": "3",
+        "name": "Almoço"
+      },
+      "fitscore": 0,
+      "services": [],
+      "id": 5
     }
   ],
   "horarios": [
