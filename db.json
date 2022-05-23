@@ -59,6 +59,18 @@
       "fitscore": 0,
       "services": [],
       "id": 5
+    },
+    {
+      "nome": "repolho",
+      "quantidade": "300",
+      "calorias": "20",
+      "horario": {
+        "id": "3",
+        "name": "Almoço"
+      },
+      "fitscore": 0,
+      "services": [],
+      "id": 6
     }
   ],
   "horarios": [

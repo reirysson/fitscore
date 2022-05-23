@@ -26,11 +26,11 @@ function Table() {
     return (
         <div className={styles.container}>
             <input type="submit" id="enviar" value="Café da manhã" onClick={(mostrarTabela)}></input>
-            <a href="/">Lanche da manhã</a>
-            <a href="/">Almoço</a>
-            <a href="/">Lanche da tarde</a>
-            <a href="/">Jantar</a>
-            <a href="/">Ceia</a>
+            <input type="submit" id="enviar" value="Lanche da manhã" onClick={(mostrarTabela)}></input>
+            <input type="submit" id="enviar" value="Almoço" onClick={(mostrarTabela)}></input>
+            <input type="submit" id="enviar" value="Lanche da tarde" onClick={(mostrarTabela)}></input>
+            <input type="submit" id="enviar" value="Jantar" onClick={(mostrarTabela)}></input>
+            <input type="submit" id="enviar" value="Ceia" onClick={(mostrarTabela)}></input>
 
             <table id="cafe_manha">
                 <tbody>
@@ -44,6 +44,7 @@ function Table() {
                             <td>{alimento.nome}</td>
                             <td>{alimento.quantidade}</td>
                             <td>{alimento.calorias}</td>
+                            <td>{alimento.horario.name}</td>
                         </tr>
                     ))}
                 </tbody>  
