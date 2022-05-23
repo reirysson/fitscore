@@ -39,30 +39,15 @@ function Table() {
                         <th>Quantidade</th>
                         <th>Energia</th>
                     </tr>
-                    <tr>
-                        <td>
-                            {alimentos.length > 0 &&
-                            alimentos.map((alimento) => (
-                            <p>{alimento.nome}</p>
-                            ))}
-                        </td>
-                        <td>
-                            {alimentos.length > 0 &&
-                            alimentos.map((alimento) => (
-                            <p>{alimento.quantidade}</p>
-                            ))} 
-                        </td>
-                        <td>
-                            {alimentos.length > 0 &&
-                            alimentos.map((alimento) => (
-                            <p>{alimento.calorias}</p>
-                            ))}   
-                        </td>
-                    </tr>
+                    {alimentos.map((alimento) => (
+                        <tr>
+                            <td>{alimento.nome}</td>
+                            <td>{alimento.quantidade}</td>
+                            <td>{alimento.calorias}</td>
+                        </tr>
+                    ))}
                 </tbody>  
             </table>
-
-            
         </div>
     )
 }
