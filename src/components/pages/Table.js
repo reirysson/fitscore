@@ -3,6 +3,7 @@ import styles from './Table.module.css'
 
 function Table() {
     const [alimentos, setAlimentos] = useState([])
+    const [alimentosFiltrados, setAlimentosFiltrados] = useState([])
 
     useEffect(() => {
         fetch('http://localhost:5000/alimentos', {
@@ -15,22 +16,23 @@ function Table() {
             .then((data) => {
                 //console.log(data)
                 setAlimentos(data)
+                setAlimentosFiltrados(data)
             })
             .catch(err => console.log(err))
     }, [])
 
-    function mostrarTabela(){
-        document.getElementById('cafe_manha').style.display = '';
+    function filtraTipo(tipo){
+        setAlimentosFiltrados(alimentos.filter(a => a.tipo === tipo))
     }
 
     return (
         <div className={styles.container}>
-            <input type="button" id="tabela1" value="Café da manhã" onClick={(mostrarTabela)}></input>
-            <input type="button" id="tabela2" value="Lanche da manhã" onClick={(mostrarTabela)}></input>
-            <input type="button" id="tabela3" value="Almoço" onClick={(mostrarTabela)}></input>
-            <input type="button" id="tabela4" value="Lanche da tarde" onClick={(mostrarTabela)}></input>
-            <input type="button" id="tabela5" value="Jantar" onClick={(mostrarTabela)}></input>
-            <input type="button" id="tabela6" value="Ceia" onClick={(mostrarTabela)}></input>
+            <button onClick={() => filtraTipo("Café da manhã")}>Café da manhã</button>
+            <button onClick={() => filtraTipo("Lanche da manhã")}>Lanche da manhã</button>
+            <button onClick={() => filtraTipo("Almoço")}>Almoço</button>
+            <button onClick={() => filtraTipo("Lanche da tarde")}>Lanche da tarde</button>
+            <button onClick={() => filtraTipo("Jantar")}>Jantar</button>
+            <button onClick={() => filtraTipo("Ceia")}>Ceia</button>
 
             <table id="cafe_manha">
                 <tbody>
@@ -39,12 +41,12 @@ function Table() {
                         <th>Quantidade</th>
                         <th>Energia</th>
                     </tr>
-                    {alimentos.map((alimento) => (
-                        <tr>
+                    {alimentosFiltrados.map((alimento) => (
+                        <tr key={alimento.id}>
                             <td>{alimento.nome}</td>
                             <td>{alimento.quantidade}</td>
                             <td>{alimento.calorias}</td>
-                            <td>{alimento.horario.name}</td>
+                            <td>{alimento.tipo}</td>
                         </tr>
                     ))}
                 </tbody>  

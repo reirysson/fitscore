@@ -4,10 +4,7 @@
       "nome": "arroz",
       "quantidade": "1000",
       "calorias": "50",
-      "horario": {
-        "id": "1",
-        "name": "Café da manhã"
-      },
+      "tipo": "Lanche da manhã",
       "fitscore": 0,
       "services": [],
       "id": 1
@@ -16,10 +13,7 @@
       "nome": "feijão",
       "quantidade": "2000",
       "calorias": "60",
-      "horario": {
-        "id": "2",
-        "name": "Lanche da manhã"
-      },
+      "tipo": "Lanche da manhã",
       "fitscore": 0,
       "services": [],
       "id": 2
@@ -28,10 +22,7 @@
       "nome": "arroz",
       "quantidade": "100",
       "calorias": "500",
-      "horario": {
-        "id": "3",
-        "name": "Almoço"
-      },
+      "tipo": "Almoço",
       "fitscore": 0,
       "services": [],
       "id": 3
@@ -40,10 +31,7 @@
       "nome": "alface",
       "quantidade": "100",
       "calorias": "500",
-      "horario": {
-        "id": "3",
-        "name": "Almoço"
-      },
+      "tipo": "Almoço",
       "fitscore": 0,
       "services": [],
       "id": 4
@@ -52,10 +40,7 @@
       "nome": "carne",
       "quantidade": "100",
       "calorias": "50",
-      "horario": {
-        "id": "3",
-        "name": "Almoço"
-      },
+      "tipo": "Almoço",
       "fitscore": 0,
       "services": [],
       "id": 5
@@ -64,10 +49,7 @@
       "nome": "repolho",
       "quantidade": "300",
       "calorias": "20",
-      "horario": {
-        "id": "3",
-        "name": "Almoço"
-      },
+      "tipo": "Almoço",
       "fitscore": 0,
       "services": [],
       "id": 6
@@ -76,13 +58,82 @@
       "nome": "feijão tipo 2",
       "quantidade": "100",
       "calorias": "20",
-      "horario": {
-        "id": "3",
-        "name": "Almoço"
-      },
+      "tipo": "Almoço",
       "fitscore": 0,
       "services": [],
       "id": 7
+    },
+    {
+      "tipo": "Lanche da tarde",
+      "nome": "baiao",
+      "quantidade": "100",
+      "calorias": "54",
+      "fitscore": 0,
+      "services": [],
+      "id": 8
+    },
+    {
+      "nome": "baiao de 2",
+      "quantidade": "150",
+      "calorias": "30",
+      "tipo": "Almoço",
+      "fitscore": 0,
+      "services": [],
+      "id": 9
+    },
+    {
+      "nome": "lasanha",
+      "quantidade": "105",
+      "calorias": "200",
+      "tipo": "Jantar",
+      "fitscore": 0,
+      "services": [],
+      "id": 10
+    },
+    {
+      "nome": "pizza",
+      "quantidade": "110",
+      "calorias": "20",
+      "tipo": "Ceia",
+      "fitscore": 0,
+      "services": [],
+      "id": 11
+    },
+    {
+      "nome": "pizza",
+      "quantidade": "110",
+      "calorias": "20",
+      "tipo": "Ceia",
+      "fitscore": 0,
+      "services": [],
+      "id": 12
+    },
+    {
+      "nome": "pizza 3",
+      "quantidade": "10",
+      "calorias": "150",
+      "tipo": "Jantar",
+      "fitscore": 0,
+      "services": [],
+      "id": 13
+    },
+    {
+      "nome": "fricasse",
+      "quantidade": "15",
+      "calorias": "20",
+      "tipo": "Jantar",
+      "fitscore": 0,
+      "services": [],
+      "id": 14
+    },
+    {
+      "nome": "arroz tipo 2",
+      "quantidade": "20",
+      "calorias": "15",
+      "tipo": "Almoço",
+      "fitscore": 0,
+      "services": [],
+      "id": 15
     }
   ],
   "horarios": [

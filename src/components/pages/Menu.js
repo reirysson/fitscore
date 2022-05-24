@@ -1,13 +1,10 @@
 import styles from './Menu.module.css'
 import { useState } from 'react'
 import FoodForm from './FoodForm'
-import { useNavigate } from 'react-router-dom'
 import Table from './Table'
 
 function Menu(){
     const [buttonPopup, setButtonPopup] = useState(false)
-
-    const navigate = useNavigate()
 
     function createAlimento(alimento) {
         alimento.fitscore = 0
@@ -22,8 +19,7 @@ function Menu(){
         })
             .then((resp) => resp.json())
             .then((data) => {
-                console.log(data)
-                navigate('/alimentos', { state: {message: 'Alimento adicionado com sucesso'}})  
+            setButtonPopup(false)
             })
             .catch((err) => console.log(err))
     }
