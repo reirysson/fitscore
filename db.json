@@ -71,6 +71,18 @@
       "fitscore": 0,
       "services": [],
       "id": 6
+    },
+    {
+      "nome": "feijão tipo 2",
+      "quantidade": "100",
+      "calorias": "20",
+      "horario": {
+        "id": "3",
+        "name": "Almoço"
+      },
+      "fitscore": 0,
+      "services": [],
+      "id": 7
     }
   ],
   "horarios": [

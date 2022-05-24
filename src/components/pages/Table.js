@@ -25,12 +25,12 @@ function Table() {
 
     return (
         <div className={styles.container}>
-            <input type="submit" id="enviar" value="Café da manhã" onClick={(mostrarTabela)}></input>
-            <input type="submit" id="enviar" value="Lanche da manhã" onClick={(mostrarTabela)}></input>
-            <input type="submit" id="enviar" value="Almoço" onClick={(mostrarTabela)}></input>
-            <input type="submit" id="enviar" value="Lanche da tarde" onClick={(mostrarTabela)}></input>
-            <input type="submit" id="enviar" value="Jantar" onClick={(mostrarTabela)}></input>
-            <input type="submit" id="enviar" value="Ceia" onClick={(mostrarTabela)}></input>
+            <input type="button" id="tabela1" value="Café da manhã" onClick={(mostrarTabela)}></input>
+            <input type="button" id="tabela2" value="Lanche da manhã" onClick={(mostrarTabela)}></input>
+            <input type="button" id="tabela3" value="Almoço" onClick={(mostrarTabela)}></input>
+            <input type="button" id="tabela4" value="Lanche da tarde" onClick={(mostrarTabela)}></input>
+            <input type="button" id="tabela5" value="Jantar" onClick={(mostrarTabela)}></input>
+            <input type="button" id="tabela6" value="Ceia" onClick={(mostrarTabela)}></input>
 
             <table id="cafe_manha">
                 <tbody>

@@ -17,15 +17,9 @@ function Footer() {
                     <Link to="/about">Sobre</Link>
                 </nav>
         </div>
-        <p className={styles.down}>FitScore. Todos os direitos reservados</p>
-        <div className={styles.footer_social}>
-            <p>Redes sociais</p>
-            <ul className={styles.social_list}>
-            <li><FaFacebook /></li>
-            <li><FaInstagram /></li>
-            <li><FaLinkedin /></li>
-            </ul>
-        </div> 
+        <div>
+            <p className={styles.down}>FitScore. Todos os direitos reservados</p>
+        </div>
         </Container>
     </footer>
     )
