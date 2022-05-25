@@ -27,7 +27,6 @@ function Menu(){
     return (
         <div>
             <div className={styles.menu_superior}>
-                <input type="text" id="name" name="name" placeholder="Pesquisar alimento na tabela"></input>
                 <button onClick={() => setButtonPopup(true)}>Adicionar alimento</button>
             </div>
             <FoodForm acionar={buttonPopup} handleSubmit={createAlimento}  setAcionar={setButtonPopup}/>

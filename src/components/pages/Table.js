@@ -21,18 +21,23 @@ function Table() {
             .catch(err => console.log(err))
     }, [])
 
-    function filtraTipo(tipo){
-        setAlimentosFiltrados(alimentos.filter(a => a.tipo === tipo))
+    function filtrarTipo(tipo){
+        if (tipo === "Todos")
+            setAlimentosFiltrados(alimentos)
+        else 
+            setAlimentosFiltrados(alimentos.filter(a => a.tipo === tipo))
     }
+
 
     return (
         <div className={styles.container}>
-            <button onClick={() => filtraTipo("Café da manhã")}>Café da manhã</button>
-            <button onClick={() => filtraTipo("Lanche da manhã")}>Lanche da manhã</button>
-            <button onClick={() => filtraTipo("Almoço")}>Almoço</button>
-            <button onClick={() => filtraTipo("Lanche da tarde")}>Lanche da tarde</button>
-            <button onClick={() => filtraTipo("Jantar")}>Jantar</button>
-            <button onClick={() => filtraTipo("Ceia")}>Ceia</button>
+            <button onClick={() => filtrarTipo("Todos")}>Todos</button>
+            <button onClick={() => filtrarTipo("Café da manhã")}>Café da manhã</button>
+            <button onClick={() => filtrarTipo("Lanche da manhã")}>Lanche da manhã</button>
+            <button onClick={() => filtrarTipo("Almoço")}>Almoço</button>
+            <button onClick={() => filtrarTipo("Lanche da tarde")}>Lanche da tarde</button>
+            <button onClick={() => filtrarTipo("Jantar")}>Jantar</button>
+            <button onClick={() => filtrarTipo("Ceia")}>Ceia</button>
 
             <table id="cafe_manha">
                 <tbody>
