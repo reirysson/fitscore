@@ -31,13 +31,16 @@ function Table() {
 
     return (
         <div className={styles.container}>
-            <button onClick={() => filtrarTipo("Todos")}>Todos</button>
-            <button onClick={() => filtrarTipo("Café da manhã")}>Café da manhã</button>
-            <button onClick={() => filtrarTipo("Lanche da manhã")}>Lanche da manhã</button>
-            <button onClick={() => filtrarTipo("Almoço")}>Almoço</button>
-            <button onClick={() => filtrarTipo("Lanche da tarde")}>Lanche da tarde</button>
-            <button onClick={() => filtrarTipo("Jantar")}>Jantar</button>
-            <button onClick={() => filtrarTipo("Ceia")}>Ceia</button>
+            <div className={styles.button}>
+                <button onClick={() => filtrarTipo("Todos")}>Todos</button>
+                <button onClick={() => filtrarTipo("Café da manhã")}>Café da manhã</button>
+                <button onClick={() => filtrarTipo("Lanche da manhã")}>Lanche da manhã</button>
+                <button onClick={() => filtrarTipo("Almoço")}>Almoço</button>
+                <button onClick={() => filtrarTipo("Lanche da tarde")}>Lanche da tarde</button>
+                <button onClick={() => filtrarTipo("Jantar")}>Jantar</button>
+                <button onClick={() => filtrarTipo("Ceia")}>Ceia</button>
+            </div>
+            
 
             <table id="cafe_manha">
                 <tbody>
