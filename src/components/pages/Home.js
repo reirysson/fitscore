@@ -1,9 +1,12 @@
 import styles from './Home.module.css'
+import Resumo from './Resumo'
+import Checklist from './Checklist'
 
 function Home(){
     return (
-        <div>
-            <p>Aqui é o início</p>
+        <div className={styles.container}>
+            <Checklist />
+            <Resumo />
         </div>
     )
 }
