@@ -3,7 +3,7 @@ import styles from './Speak.module.css'
 function Speak() {
     return (
         <div>
-            <p>Aqui é a página fale conosco</p>
+            <p>Aqui é a página quem somos</p>
         </div>
     )
 }

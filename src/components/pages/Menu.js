@@ -1,7 +1,7 @@
 import styles from './Menu.module.css'
 import { useState } from 'react'
-import FoodForm from './FoodForm'
-import Table from './Table'
+import FoodForm from '../layout/FoodForm'
+import Table from '../layout/Table'
 
 function Menu(){
     const [buttonPopup, setButtonPopup] = useState(false)

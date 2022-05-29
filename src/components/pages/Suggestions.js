@@ -1,7 +1,7 @@
 function Company(){
     return (
         <div>
-            <p>Aqui é a página quem somos</p>
+            <p>Aqui é a página de sujestões</p>
         </div>
     )
 }

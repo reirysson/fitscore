@@ -4,7 +4,6 @@ function Resumo(){
     return(
         <div>
             <h3>Resumo das calorias</h3>
-            
         </div>
     )
 }

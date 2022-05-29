@@ -1,6 +1,6 @@
 import styles from './Home.module.css'
-import Resumo from './Resumo'
-import Checklist from './Checklist'
+import Resumo from '../layout/Resumo'
+import Checklist from '../layout/Checklist'
 
 function Home(){
     return (

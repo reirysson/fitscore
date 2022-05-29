@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import Input from '../layout/Input'
-import Select from '../layout/Select'
+import Input from './Input'
+import Select from './Select'
 import styles from './FoodForm.module.css'
 import { AiFillCloseCircle } from 'react-icons/ai'
 
