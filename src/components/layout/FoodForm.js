@@ -7,8 +7,6 @@ import { AiFillCloseCircle } from 'react-icons/ai'
 function FoodForm({handleSubmit, alimentoData, acionar}) {
     const [horarios, setHorarios] = useState([])
     const [alimento, setAlimento] = useState(alimentoData || {})
-    const [alimentos, setAlimentos] = useState([])
-    const [busca, setBusca] = useState('')
 
     useEffect(() => {
         fetch('http://localhost:5000/horarios', {

@@ -1,6 +1,6 @@
-import styles from './Meta.module.css'
 import { AiFillCloseCircle } from 'react-icons/ai'
 import Input from '../layout/Input'
+import styles from './Meta.module.css'
 
 function Meta({ acionar }){
     return (acionar) ? (
