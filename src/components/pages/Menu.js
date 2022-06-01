@@ -2,31 +2,21 @@ import styles from './Menu.module.css'
 import { useState } from 'react'
 import FoodForm from '../layout/FoodForm'
 import Table from '../layout/Table'
+import { inserirAlimento } from '../../api'
 
 function Menu(){
     const [buttonPopup, setButtonPopup] = useState(false)
+    const [chave, setChave] = useState(0)
 
     function createAlimento(alimento) {
-        alimento.fitscore = 0
-        alimento.services = []
-
-        fetch('http://localhost:5000/alimentos', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(alimento),
-        })
-            .then((resp) => resp.json())
-            .then((data) => {
-            setButtonPopup(false)
-            })
-            .catch((err) => console.log(err))
+        inserirAlimento(alimento)
+        setButtonPopup(false)
+        setChave(chave+1)
     }
 
     return (
         <div>
-            <Table /> 
+            <Table key={chave}/> 
             <FoodForm acionar={buttonPopup} handleSubmit={createAlimento}  setAcionar={setButtonPopup}/>
             <div className={styles.menu_superior}>
                 <button onClick={() => setButtonPopup(true)}>Adicionar alimento</button>

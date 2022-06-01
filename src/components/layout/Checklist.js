@@ -1,6 +1,7 @@
 import styles from './Checklist.module.css'
 import Select from './Select'
 import { useEffect,useState } from 'react'
+import { listarAlimentos, listarHorario } from '../../api'
 
 function Checklist({ alimentoData }) {
     const [horarios, setHorarios] = useState([])
@@ -9,33 +10,11 @@ function Checklist({ alimentoData }) {
     const [alimentosFiltrados, setAlimentosFiltrados] = useState([])
     
     useEffect(() => {
-        fetch('http://localhost:5000/horarios', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-            .then((resp) => resp.json())
-            .then((data) => {
-                setHorarios(data)
-            })
-            .catch(err => console.log(err))
+        setHorarios(listarHorario())
     }, [])
 
     useEffect(() => {
-        fetch('http://localhost:5000/alimentos', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-            .then((resp) => resp.json())
-            .then((data) => {
-                //console.log(data)
-                setAlimentos(data)
-                setAlimentosFiltrados(data)
-            })
-            .catch(err => console.log(err))
+        setAlimentos(listarAlimentos())
     }, [])
 
     function handleHorario(e) {

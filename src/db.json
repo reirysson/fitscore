@@ -274,21 +274,6 @@
     {
       "nome": "arroz",
       "id": 68
-    },
-    {
-      "fitscore": 0,
-      "services": [],
-      "nome": "arroz",
-      "id": 69
-    },
-    {
-      "fitscore": 0,
-      "services": [],
-      "nome": "arroz",
-      "quantidade": "100",
-      "calorias": "50",
-      "tipo": "Jantar",
-      "id": 70
     }
   ],
   "horarios": [

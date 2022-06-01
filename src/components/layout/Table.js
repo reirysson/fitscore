@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { listarAlimentos } from '../../api'
 import styles from './Table.module.css'
 
 function Table() {
@@ -6,19 +7,8 @@ function Table() {
     const [alimentosFiltrados, setAlimentosFiltrados] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/alimentos', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-            .then((resp) => resp.json())
-            .then((data) => {
-                //console.log(data)
-                setAlimentos(data)
-                setAlimentosFiltrados(data)
-            })
-            .catch(err => console.log(err))
+        setAlimentos(listarAlimentos())
+        setAlimentosFiltrados(listarAlimentos())
     }, [])
 
     function filtrarTipo(tipo){
@@ -27,7 +17,6 @@ function Table() {
         else 
             setAlimentosFiltrados(alimentos.filter(a => a.tipo === tipo))
     }
-
 
     return (
         <div className={styles.container}>

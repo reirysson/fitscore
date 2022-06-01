@@ -3,23 +3,14 @@ import Input from './Input'
 import Select from './Select'
 import styles from './FoodForm.module.css'
 import { AiFillCloseCircle } from 'react-icons/ai'
+import { listarHorario } from '../../api'
 
 function FoodForm({handleSubmit, alimentoData, acionar}) {
     const [horarios, setHorarios] = useState([])
     const [alimento, setAlimento] = useState(alimentoData || {})
 
     useEffect(() => {
-        fetch('http://localhost:5000/horarios', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-            .then((resp) => resp.json())
-            .then((data) => {
-                setHorarios(data)
-            })
-            .catch(err => console.log(err))
+        setHorarios(listarHorario())
     }, [])
 
     const submit = (e) => {
@@ -40,8 +31,6 @@ function FoodForm({handleSubmit, alimentoData, acionar}) {
         })
         console.log(alimento)
     }
-
-    
     
     return (acionar) ? (
         <div className={styles.popup}>
