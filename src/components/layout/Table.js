@@ -20,7 +20,7 @@ function Table() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.button}>
+            <div className={styles.tipos}>
                 <button onClick={() => filtrarTipo("Todos")}>Todos</button>
                 <button onClick={() => filtrarTipo("Café da manhã")}>Café da manhã</button>
                 <button onClick={() => filtrarTipo("Lanche da manhã")}>Lanche da manhã</button>
@@ -29,21 +29,19 @@ function Table() {
                 <button onClick={() => filtrarTipo("Jantar")}>Jantar</button>
                 <button onClick={() => filtrarTipo("Ceia")}>Ceia</button>
             </div>
-            
 
             <table id="cafe_manha">
                 <tbody>
                     <tr>
                         <th>Alimento</th>
-                        <th>Quantidade</th>
-                        <th>Energia</th>
+                        <th>Quantidade (gramas)</th>
+                        <th>Energia (Kcal)</th>
                     </tr>
                     {alimentosFiltrados.map((alimento) => (
                         <tr key={alimento.id}>
                             <td>{alimento.nome}</td>
                             <td>{alimento.quantidade}</td>
                             <td>{alimento.calorias}</td>
-                            <td>{alimento.tipo}</td>
                         </tr>
                     ))}
                 </tbody>  

@@ -18,7 +18,7 @@ function Menu(){
         <div>
             <Table key={chave}/> 
             <FoodForm acionar={buttonPopup} handleSubmit={createAlimento}  setAcionar={setButtonPopup}/>
-            <div className={styles.menu_superior}>
+            <div className={styles.btn_add}>
                 <button onClick={() => setButtonPopup(true)}>Adicionar alimento</button>
             </div>
         </div>

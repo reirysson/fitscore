@@ -1,26 +1,25 @@
-.menu_superior {
+.btn_add {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-bottom: 30px;
+    padding-right: 50px;
 }
 
-.menu_superior button {
+.btn_add button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
     gap: 10px;
-    width: 252px;
-    height: 52px;
     background-color: #7DD956;
     box-shadow: 0px 2px 16px rgba(11, 11, 11, 0.1);
     border-radius: 10px;
     transition: 0.5s;
 }
 
-.menu_superior button:hover {
+.btn_add button:hover {
     cursor: pointer;
     background-color: #5ea141;
 }
