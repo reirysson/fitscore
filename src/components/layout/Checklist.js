@@ -11,18 +11,12 @@ function Checklist({ alimentoData }) {
     
     useEffect(() => {
         setHorarios(listarHorario())
-    }, [])
-
-    useEffect(() => {
         setAlimentos(listarAlimentos())
+        setAlimentosFiltrados(listarAlimentos())
     }, [])
 
     function handleHorario(e) {
-        setAlimento({
-            ...alimento,
-            tipo: e.target.options[e.target.selectedIndex].text
-        })
-        console.log(alimento)
+        filtrarTipo(e.target.options[e.target.selectedIndex].text)
     }
 
     function filtrarTipo(tipo){
@@ -39,16 +33,18 @@ function Checklist({ alimentoData }) {
             </div>
             <div>
                 <table>
-                    <tbody>
+                    <thead>
                         <tr>
                             <th>Nome do alimento</th>
                         </tr>
-                        {alimentosFiltrados.map((alimento) => (
-                            <tr key={alimento.id}>
-                                <td>{alimento.nome}</td>
-                            </tr>
-                        ))}
-                    </tbody>
+                    </thead>
+                        <tbody>
+                            {alimentosFiltrados.map((alimento) => (
+                                <tr key={alimento.id}>
+                                    <td>{alimento.nome}</td>
+                                </tr>
+                            ))}
+                        </tbody>
                 </table>
             </div>
         </div>
