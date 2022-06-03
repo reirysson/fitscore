@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { listarAlimentos } from '../../api'
 import styles from './Table.module.css'
+import { MdOutlineFreeBreakfast } from 'react-icons/md'
 
 function Table() {
     const [alimentos, setAlimentos] = useState([])
@@ -21,7 +22,7 @@ function Table() {
     return (
         <div className={styles.container}>
             <div className={styles.tipos}>
-                <button onClick={() => filtrarTipo("Todos")}>Todos</button>
+                <button onClick={() => filtrarTipo("Todos")} className={MdOutlineFreeBreakfast}>Todos</button>
                 <button onClick={() => filtrarTipo("Café da manhã")}>Café da manhã</button>
                 <button onClick={() => filtrarTipo("Lanche da manhã")}>Lanche da manhã</button>
                 <button onClick={() => filtrarTipo("Almoço")}>Almoço</button>
@@ -39,9 +40,9 @@ function Table() {
                     </tr>
                     {alimentosFiltrados.map((alimento) => (
                         <tr key={alimento.id}>
-                            <td>{alimento.nome}</td>
-                            <td>{alimento.quantidade}</td>
-                            <td>{alimento.calorias}</td>
+                            <td className={styles.itens_alimento}>{alimento.nome}</td>
+                            <td className={styles.itens_alimento}>{alimento.quantidade}</td>
+                            <td className={styles.itens_alimento}>{alimento.calorias}</td>
                         </tr>
                     ))}
                 </tbody>  

@@ -11,10 +11,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 5px;
+    margin-bottom: 10px;
+    width: 75%;
 }
 
-button {
+.tipos button {
+    flex: 1;
+    padding: 20px;
     background: rgba(68, 160, 29, 0.1);
     border: none;
     border-radius: 5px;
@@ -24,7 +27,7 @@ button {
     box-shadow: 1px 5px 5px rgba(20, 31, 16, 0.2);
 }
 
-button:hover {
+.tipos button:hover {
     background-color: #7DD956;
     cursor: pointer;
 }
@@ -39,8 +42,28 @@ td {
 }
 
 th {
+    padding: 10px;
+    width: 33%;
     justify-content: center;
     font-size: 18px;
     font-weight: 400;
     background: rgba(68, 160, 29, 0.1);
 }
+
+.itens_alimento {
+    text-align: center;
+    padding: 5px;
+}
+
+.itens_alimento:not(:last-of-type) {
+    border-right: 0.8px solid rgba(69, 116, 49, 0.5);
+}
+
+th:not(:last-of-type) {
+    border-right: 0.8px solid rgba(69, 116, 49, 0.5);
+}
+
+tr:nth-child(odd) {
+    background: rgba(250, 250, 250, 0.8);
+}
+
