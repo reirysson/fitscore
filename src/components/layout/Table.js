@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { listarAlimentos } from '../../api'
 import styles from './Table.module.css'
-import { MdOutlineFreeBreakfast } from 'react-icons/md'
 
 function Table() {
     const [alimentos, setAlimentos] = useState([])
@@ -22,7 +21,7 @@ function Table() {
     return (
         <div className={styles.container}>
             <div className={styles.tipos}>
-                <button onClick={() => filtrarTipo("Todos")} className={MdOutlineFreeBreakfast}>Todos</button>
+                <button onClick={() => filtrarTipo("Todos")}>Todos</button>
                 <button onClick={() => filtrarTipo("Café da manhã")}>Café da manhã</button>
                 <button onClick={() => filtrarTipo("Lanche da manhã")}>Lanche da manhã</button>
                 <button onClick={() => filtrarTipo("Almoço")}>Almoço</button>

@@ -30,11 +30,18 @@
     height: 51px;
     left: 50px;
     top: 402px;
+    font-weight: 700;
+    font-size: 18px;
     background-color: #7DD956;
     box-shadow: 0px 2px 16px rgba(11, 11, 11, 0.1);
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.popup_inner .save_btn:hover {
+    background-color: #5ea141;
 }
 
 .popup_inner .close_btn {
@@ -47,20 +54,50 @@
     font-size: 25px;
 }
 
+.popup_inner .close_btn:hover {
+    cursor: pointer;
+}
+
 .input_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-p {
-    text-align: center;
+h2 {
+    font-weight: 700;
     font-size: 20px;
+    color: #141F10;
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    color: #A1A4B2;
 }
 
 input {
+    padding: 10px;
     border-radius: 5px;
     border: none;
-    
+    background: #FAFAFA;
     box-shadow: 0px 2px 16px rgba(11, 11, 11, 0.1);
+}
+
+input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #C2C2C1;
+}
+
+select {
+    border-radius: 5px;
+    border: none;
+    background: #FAFAFA;
+    box-shadow: 0px 2px 16px rgba(11, 11, 11, 0.1);
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #C2C2C1;
 }
