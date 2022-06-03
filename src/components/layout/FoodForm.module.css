@@ -36,3 +36,31 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+.popup_inner .close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #7DD956;
+    border: none;
+    font-size: 25px;
+}
+
+.input_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    
+    box-shadow: 0px 2px 16px rgba(11, 11, 11, 0.1);
+}
