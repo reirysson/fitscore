@@ -7,7 +7,7 @@ function Footer() {
             <h1> &copy; FitScore </h1>
         </div>
         <div>
-            <p>FitScore. Todos os direitos reservados</p>
+            <p>FitScore. Todos os direitos reservados - Desenvolvido por Reirysson Costa</p>
         </div>
     </footer>
     )
