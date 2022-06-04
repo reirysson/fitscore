@@ -2,5 +2,57 @@
     width: 30%;
     display: flex;
     flex-direction:  column;
-    border: 1px solid red;
+}
+
+button {
+    font-weight: 500;
+    font-size: 14px;
+    color: #787878;
+    border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+}
+
+.resumo_legenda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.resumo_legenda_item {
+    padding: 10px;
+    gap: 10px;
+}
+
+.resumo_legenda h4 {
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2A3F22;
+}
+
+.resumo_legenda_item p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #787878;
+}
+
+.resumo_legenda_item {
+    display: flex;
+    flex-direction: row;
+}
+
+.resumo_editar {
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
 }
