@@ -28,14 +28,17 @@ function Checklist({ alimentoData }) {
 
     return(
         <div className={styles.checklist_completo}>
+
             <div className={styles.checklist_select}>
-                <Select name="tipo_id" options={horarios} handleOnChange={handleHorario} value={alimento.tipo ? alimento.tipo : ''} />
+                <Select name="tipo_id" options={horarios} handleOnChange={handleHorario} value={horarios.tipo ? horarios.tipo : ''} />
             </div>
-            <div className={styles.checklist.tabela}>
+
+            <div className={styles.checklist_tabela}>
                 <table>
                     <thead>
                         <tr>
                             <th>Nome do alimento</th>
+                            <th>Você comeu?</th>
                         </tr>
                     </thead>
                         <tbody>
