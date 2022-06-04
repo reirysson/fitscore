@@ -2,6 +2,8 @@ import styles from './Checklist.module.css'
 import Select from './Select'
 import { useEffect,useState } from 'react'
 import { listarAlimentos, listarHorario } from '../../api'
+import verified from '../../img/verified.svg'
+import not from '../../img/not.svg'
 
 function Checklist({ alimentoData }) {
     const [horarios, setHorarios] = useState([])
@@ -45,7 +47,7 @@ function Checklist({ alimentoData }) {
                             {alimentosFiltrados.map((alimento) => (
                                 <tr key={alimento.id}>
                                     <td>{alimento.nome}</td>
-                                    <td>nao sim</td>
+                                    <td><button><img src={verified} alt="Marcar que comeu no checkist"/></button> <button><img src={not} alt="Marcar que não comeu no checklist"/></button></td>
                                 </tr>
                             ))}
                         </tbody>

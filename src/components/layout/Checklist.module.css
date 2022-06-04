@@ -21,6 +21,10 @@
     color: #000000;
 }
 
+.checklist_select select:hover {
+    cursor: pointer;
+}
+
 .checklist_tabela {
     width: 100%;
     align-items: center;
@@ -47,6 +51,15 @@ tbody td {
     text-align: center;
     font-weight: 300;
     font-size: 16px;
+}
+
+tbody td button {
+    border: none;
+    background-color: transparent;
+}
+
+tbody td button:hover {
+    cursor: pointer;
 }
 
 td:not(:last-of-type) {
