@@ -27,11 +27,11 @@ function Checklist({ alimentoData }) {
     }
 
     return(
-        <div>
-            <div>
+        <div className={styles.checklist_completo}>
+            <div className={styles.checklist_select}>
                 <Select name="tipo_id" options={horarios} handleOnChange={handleHorario} value={alimento.tipo ? alimento.tipo : ''} />
             </div>
-            <div>
+            <div className={styles.checklist.tabela}>
                 <table>
                     <thead>
                         <tr>
@@ -42,6 +42,7 @@ function Checklist({ alimentoData }) {
                             {alimentosFiltrados.map((alimento) => (
                                 <tr key={alimento.id}>
                                     <td>{alimento.nome}</td>
+                                    <td>nao sim</td>
                                 </tr>
                             ))}
                         </tbody>

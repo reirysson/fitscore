@@ -1,0 +1,21 @@
+.checklist_completo {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.checklist_select {
+    width: 100%;
+}
+
+.checklist_select select {
+    width: 100%;
+    background: rgba(125, 217, 86, 0.15);
+    box-shadow: 0px 2px 16px rgba(11, 11, 11, 0.1);
+}
+
+.checklist.tabela {
+    width: 100%;
+}

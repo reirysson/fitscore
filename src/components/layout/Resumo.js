@@ -7,7 +7,7 @@ function Resumo(){
 
 
     return(
-        <div>
+        <div className={styles.resumo_completo}>
             <h3>Resumo das calorias</h3>
             <button onClick={() => setButtonPopup(true)}>Editar meta</button>
             <Meta acionar={buttonPopup}  setAcionar={setButtonPopup}/>
