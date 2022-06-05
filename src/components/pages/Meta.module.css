@@ -10,6 +10,21 @@
     align-items: center;
 }
 
+.popup_inner .close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #7DD956;
+    border: none;
+    font-size: 25px;
+}
+
+.popup_inner .close_btn:hover {
+    cursor: pointer;
+}
+
+
 .popup_inner {
     position: relative;
     padding: 32px;
@@ -30,9 +45,17 @@
     height: 51px;
     left: 50px;
     top: 402px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #141F10;
     background-color: #7DD956;
     box-shadow: 0px 2px 16px rgba(11, 11, 11, 0.1);
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.popup_input {
+    display: flex;
+    background-color: red;
 }

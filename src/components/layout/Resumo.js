@@ -31,10 +31,11 @@ function Resumo(){
                     </div>
                 </div>
                 
-
+                
                 <div className={styles.resumo_editar}>
                     <button onClick={() => setButtonPopup(true)}><img src={edit} alt="Botão editar meta"/> Editar meta</button>
                 </div>
+
             </div>
             
             <Meta acionar={buttonPopup}  setAcionar={setButtonPopup}/>
