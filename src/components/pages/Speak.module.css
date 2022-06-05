@@ -1,0 +1,39 @@
+.quemsomos_completo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.quemsomos_descricao {
+    display: flex;
+    flex-direction: row;
+}
+
+.quemsomos_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 50px;
+}
+
+.quemsomos_texto p{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    color: #141F10;
+}
+
+.quemsomos_foto {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #141F10;
+}
