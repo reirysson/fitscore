@@ -14,12 +14,13 @@
 .contato_sugestao {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
     background-color: red;
 }
 
 .contato_sugestao input {
     width: 100%;
+    padding: 10px 10px 100px 10px;
 }
 
 .btn_sugestion button {

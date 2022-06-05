@@ -1,5 +1,7 @@
 import styles from './Speak.module.css'
 import fotoperfil from '../../img/foto_perfil.png'
+import { BsGithub } from 'react-icons/bs'
+import { TiSocialLinkedinCircular } from 'react-icons/ti'
 
 function Speak() {
     return (
@@ -20,12 +22,16 @@ function Speak() {
                         As informações calóricas sobre alimentos estarão cadastradas no software, baseadas em referências nacionais.
                     </p>
 
-                   <a href="https://forms.gle/rcb4FXj7AwkBbrE4A">Faça uma avaliação do nosso projeto</a>
+                   <a href="https://forms.gle/rcb4FXj7AwkBbrE4A" target="_blank">Faça uma avaliação do nosso projeto</a>
                 </div>
 
                 <div className={styles.quemsomos_foto}>
                     <img src={fotoperfil} alt="Foto do perfil"/>
                     <h4>Reirysson Costa</h4>
+                    <div className={styles.quemsomos_social}>
+                        <a className={styles.github} href="https://github.com/reirysson" target="_blank"><BsGithub /></a>
+                        <a href="https://www.linkedin.com/in/reirysson-costa/" target="_blank"><TiSocialLinkedinCircular /></a>
+                    </div>
                 </div>
             </div>
             

@@ -33,7 +33,19 @@
     gap: 20px;
 }
 
+.quemsomos_texto a:hover {
+    font-weight: 700;
+}
+
 a {
     text-decoration: none;
     color: #141F10;
 }
+
+.quemsomos_social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 40px;
+}
+
