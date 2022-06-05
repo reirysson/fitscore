@@ -53,6 +53,11 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.popup_inner .save_btn:hover {
+    background-color: #5ea141;
 }
 
 .popup_input {
