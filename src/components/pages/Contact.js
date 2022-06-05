@@ -10,12 +10,19 @@ function Contact() {
 
             <div className={styles.contato_interno}>
                 <div className={styles.contato_sugestao}>
-                    <p>Insira seu e-mail e digite sua sugestão para entrar em contato conosco</p>
-                    <Input type="text" text="E-mail: *" name="email" placeholder="Ex.: meuemail@gmail.com"/>
-                    <Input type="text" text="Envie sua sugestão: *" name="sugestao" placeholder="Ex.: sua sugestão"/>
-                    <div className={styles.btn_sugestion}>
-                        <button>Enviar sugestão</button>
+                    <div className={styles.contato_email}>
+                        <p>Insira seu e-mail e digite sua sugestão para entrar em contato conosco</p>
+
+                        <Input type="text" text="E-mail: *" name="email" placeholder="Ex.: meuemail@gmail.com"/>
                     </div>
+                    
+                    <div className={styles.contato_mensagem}>
+                        <Input type="text" text="Envie sua sugestão: *" name="sugestao" placeholder="Ex.: sua sugestão"/>
+                        <div className={styles.btn_sugestion}>
+                            <button>Enviar sugestão</button>
+                        </div>
+                    </div>
+                    
                 </div>
                 <img src={contato} alt="Logo da página de contato"/>
             </div>      
