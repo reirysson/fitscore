@@ -19,7 +19,7 @@ function Contact() {
                     <div className={styles.contato_mensagem}>
                         <Input type="text" text="Envie sua sugestão: *" name="sugestao" placeholder="Ex.: sua sugestão"/>
                         <div className={styles.btn_sugestion}>
-                            <button>Enviar sugestão</button>
+                            <a href="mailto:reiryssonjp@gmail.com" >Enviar sugestão</a >
                         </div>
                     </div>
                     

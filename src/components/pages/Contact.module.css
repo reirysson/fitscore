@@ -55,7 +55,7 @@
     border-radius: 15px;
 }
 
-.btn_sugestion button {
+.btn_sugestion a {
     width: 100%;
     border: none;
     padding: 15px 30px;
@@ -66,9 +66,11 @@
     transition: 0.5s;
     font-size: 18px;
     font-weight: 700;
+    display: block;
+    text-align: center;
 }
 
-.btn_sugestion button:hover {
+.btn_sugestion a:hover {
     cursor: pointer;
     background-color: #5ea141;
 }
