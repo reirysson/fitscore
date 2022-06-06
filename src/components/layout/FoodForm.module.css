@@ -12,7 +12,7 @@
 
 .popup_inner {
     position: relative;
-    padding: 32px;
+    padding: 30px;
     width: 526px;
     height: 503px;
     max-width: 640px;
@@ -63,6 +63,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+}
+
+.input_container *:first-child, .input_container *:last-child {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
 }
 
 h2 {
