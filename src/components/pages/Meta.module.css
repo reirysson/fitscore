@@ -27,7 +27,7 @@
 
 .popup_inner {
     position: relative;
-    padding: 32px;
+    padding: 50px;
     width: 526px;
     height: 503px;
     max-width: 640px;
@@ -35,7 +35,6 @@
     background-color: #FFF;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
 }
 
@@ -60,7 +59,29 @@
     background-color: #5ea141;
 }
 
+h2, p {
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+}
+
 .popup_input {
     display: flex;
-    background-color: red;
+    flex-direction: row-reverse;
+    align-self: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+
+.popup_calorias {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup_calorias input {
+    max-width: 188px;
 }
