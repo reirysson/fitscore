@@ -10,6 +10,7 @@ function Checklist({ alimentoData }) {
     const [alimento, setAlimento] = useState(alimentoData || {})
     const [alimentos, setAlimentos] = useState([])
     const [alimentosFiltrados, setAlimentosFiltrados] = useState([])
+    const [tipoSelecionado, setTipoSelecionado] = useState('')
     
     useEffect(() => {
         setHorarios(listarHorario())
@@ -22,6 +23,7 @@ function Checklist({ alimentoData }) {
     }
 
     function filtrarTipo(tipo){
+        setTipoSelecionado(tipo)
         if (tipo === "Todos")
             setAlimentosFiltrados(alimentos)
         else 
@@ -32,7 +34,7 @@ function Checklist({ alimentoData }) {
         <div className={styles.checklist_completo}>
 
             <div className={styles.checklist_select}>
-                <Select name="tipo_id" options={horarios} handleOnChange={handleHorario} value={horarios.tipo ? horarios.tipo : ''} />
+                <Select name="tipo_id" options={horarios} handleOnChange={handleHorario} value={tipoSelecionado} />
             </div>
 
             <div className={styles.checklist_tabela}>

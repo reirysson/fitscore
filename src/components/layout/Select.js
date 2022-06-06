@@ -8,7 +8,7 @@ function Select({ text, name, options, handleOnChange, value }) {
                 onChange={handleOnChange}
                 value={value || ''}
             >
-                <option>Selecione um horário</option>
+                <option disabled>Selecione um horário</option>
                 {options.map((option) => (
                     <option value={option.name} key={option.id}>{option.name}</option>
                 ))}
