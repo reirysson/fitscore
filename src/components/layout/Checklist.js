@@ -49,7 +49,7 @@ function Checklist({ alimentoData }) {
                             {alimentosFiltrados.map((alimento) => (
                                 <tr key={alimento.id}>
                                     <td>{alimento.nome}</td>
-                                    <td><button><img src={verified} alt="Marcar que comeu no checkist"/></button> <button><img src={not} alt="Marcar que não comeu no checklist"/></button></td>
+                                    <td><button><img src={verified} alt="Icone de marcar que comeu no checkist"/></button> <button><img src={not} alt="Icone de marcar que não comeu no checklist"/></button></td>
                                 </tr>
                             ))}
                         </tbody>
