@@ -32,12 +32,11 @@ function Checklist({ alimentoData }) {
             setAlimentosFiltrados(alimentos.filter(a => a.tipo === tipo))
     }
 
-    function filtraCalorias(event){
-        const pegarCalorias = alimentos.filter(alimento => {
-            console.log(alimento) 
-            console.log(event)
-            return alimento.id !== event.target.value 
+    function filtraCalorias(alimentoId){
+        const pegarCalorias = alimentos.filter(alimento => { 
+            return alimento.id === alimentoId
         })
+        console.log(pegarCalorias)
     }
 
     return(
@@ -60,7 +59,7 @@ function Checklist({ alimentoData }) {
                             {alimentosFiltrados.map((alimento) => (
                                 <tr key={alimento.id}>
                                     <td>{alimento.nome}</td>
-                                    <td><button onClick={e => filtraCalorias(e)}><img src={verified} alt="Icone de marcar que comeu no checkist"/></button> <button><img src={not} alt="Icone de marcar que não comeu no checklist"/></button></td>
+                                    <td><button onClick={() => filtraCalorias(alimento.id)}><img src={verified} alt="Icone de marcar que comeu no checkist"/></button> <button><img src={not} alt="Icone de marcar que não comeu no checklist"/></button></td>
                                 </tr>
                             ))}
                         </tbody>
