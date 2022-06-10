@@ -63,6 +63,12 @@ h2, p {
     text-align: center;
 }
 
+.popup_inner p {
+    color: #A1A4B2;
+    font-weight: 300;
+    text-align: center;
+}
+
 h3 {
     text-align: left;
 }
