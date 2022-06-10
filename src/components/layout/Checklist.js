@@ -47,7 +47,6 @@ function Checklist({ alimentoData }) {
             </div>
 
             <div className={styles.checklist_tabela}>
-            <p>calorias {calorias}</p>
                 <table>
                     <thead>
                         <tr>

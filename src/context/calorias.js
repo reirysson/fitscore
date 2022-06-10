@@ -10,7 +10,7 @@ export const useCaloriasContext = () => {
 
 export const CaloriasContextProvider = ({children}) =>{
     
-const [calorias, setCalorias] = useState(100)
+const [calorias, setCalorias] = useState(1800)
 
     return (
       <CaloriasContext.Provider value={calorias}>
