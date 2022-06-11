@@ -15,13 +15,13 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
-    padding: 50px;
+    padding: 50px 50px 50px 90px;
 }
 
 .quemsomos_texto p{
     font-weight: 400;
     font-size: 18px;
-    text-align: left;
+    text-align: justify;
     color: #141F10;
 }
 

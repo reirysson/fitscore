@@ -1,13 +1,5 @@
 {
-  "alimentos": [
-    {
-    "nome": "arroz",
-    "quantidade": "100",
-    "calorias": "500",
-    "tipo": "Almoço",
-    "id": 1
-  }
-],
+  "alimentos": [],
   "horarios": [
     {
       "id": 1,
