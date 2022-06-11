@@ -9,11 +9,16 @@ export const useCaloriasContext = () => {
 }
 
 export const CaloriasContextProvider = ({children}) =>{
-    
-const [calorias, setCalorias] = useState(1800)
+
+const [metaCaloria, setMetaCaloria] = useState(2000)   
+const [caloriaConsumida, setCaloriaConsumida] = useState(0)
+const caloriasState = { 
+  metaDiaria:{metaCaloria, setMetaCaloria}, 
+  caloriaConsumida:{caloriaConsumida, setCaloriaConsumida}
+}
 
     return (
-      <CaloriasContext.Provider value={calorias}>
+      <CaloriasContext.Provider value={caloriasState}>
         {children}
       </CaloriasContext.Provider>
     )

@@ -12,7 +12,7 @@ function Checklist({ alimentoData }) {
     const [alimentos, setAlimentos] = useState([])
     const [alimentosFiltrados, setAlimentosFiltrados] = useState([])
     const [tipoSelecionado, setTipoSelecionado] = useState('')
-    const calorias = useCaloriasContext()
+    const caloriasState = useCaloriasContext()
 
     useEffect(() => {
         setHorarios(listarHorario())
@@ -32,11 +32,9 @@ function Checklist({ alimentoData }) {
             setAlimentosFiltrados(alimentos.filter(a => a.tipo === tipo))
     }
 
-    function filtraCalorias(alimentoId){
-        const pegarCalorias = alimentos.filter(alimento => { 
-            return alimento.id === alimentoId
-        })
-        console.log(pegarCalorias)
+    function consumirCaloria(alimento){
+        caloriasState.caloriaConsumida.setCaloriaConsumida(caloriasState.caloriaConsumida.caloriaConsumida + +alimento.calorias)
+        setAlimentosFiltrados(alimentos.filter(a => a.id !== alimento.id))
     }
 
     return(
@@ -58,7 +56,14 @@ function Checklist({ alimentoData }) {
                             {alimentosFiltrados.map((alimento) => (
                                 <tr key={alimento.id}>
                                     <td>{alimento.nome}</td>
-                                    <td><button onClick={() => filtraCalorias(alimento.id)}><img src={verified} alt="Icone de marcar que comeu no checkist"/></button> <button><img src={not} alt="Icone de marcar que não comeu no checklist"/></button></td>
+                                    <td>
+                                        <button onClick={() => consumirCaloria(alimento)}>
+                                            <img src={verified} alt="Icone de marcar que comeu no checkist"/>
+                                        </button> 
+                                        <button onClick={() => setAlimentosFiltrados(alimentos.filter(a => a.id !== alimento.id))}>
+                                            <img src={not} alt="Icone de marcar que não comeu no checklist"/>
+                                        </button>
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
