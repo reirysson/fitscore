@@ -27,15 +27,15 @@ function Resumo(){
                     <h4>Legenda do gráfico:</h4>
                     <div className={styles.resumo_legenda_item}>
                         <img src={legendaVerde} alt="Botão editar meta"/>
-                        <p>Kcal consumidas: {calorias} Kcal</p>
+                        <p>Kcal consumidas:{calorias} Kcal</p>
                     </div>
                     <div className={styles.resumo_legenda_item}>
                         <img src={legendaAmarela} alt="Botão editar meta"/>
-                        <p>Kcal restantes: 0 Kcal</p>
+                        <p>Kcal restantes:0 Kcal</p>
                     </div>
                     <div className={styles.resumo_legenda_item}>
                         <img src={legendaVermelha} alt="Botão editar meta"/>
-                        <p>Kcal excedidas: 200 Kcal</p>
+                        <p>Kcal excedidas:200 Kcal</p>
                     </div>
                 </div>
                 
