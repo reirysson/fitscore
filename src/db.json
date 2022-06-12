@@ -1,5 +1,66 @@
 {
-  "alimentos": [],
+  "alimentos": [
+    {
+      "nome": "Pão de queijo, assado",
+      "quantidade": "100",
+      "calorias": "363",
+      "tipo": "Café da manhã"
+    },
+    {
+      "nome": "Laranja, pêra, suco",
+      "quantidade": "100",
+      "calorias": "33",
+      "tipo": "Café da manhã"
+    },
+    {
+      "nome": "Maça, Argentina, com casca, crua",
+      "quantidade": "100",
+      "calorias": "63",
+      "tipo": "Lanche da manhã"
+    },
+    {
+      "nome": "Arroz, tipo 1, cozido",
+      "quantidade": "100",
+      "calorias": "130",
+      "tipo": "Almoço"
+    },
+    {
+      "nome": "Feijoada",
+      "quantidade": "100",
+      "calorias": "117",
+      "tipo": "Almoço"
+    },
+    {
+      "nome": "Carne, bovina, acém, moído, cozido",
+      "quantidade": "100",
+      "calorias": "212",
+      "tipo": "Almoço"
+    },
+    {
+      "nome": "Banana, maça, crua",
+      "quantidade": "100",
+      "calorias": "87",
+      "tipo": "Almoço"
+    },
+    {
+      "nome": "Tapioca, com manteiga",
+      "quantidade": "100",
+      "calorias": "348",
+      "tipo": "Lanche da tarde"
+    },
+    {
+      "nome": "Ovo, de galinha, inteiro, frito",
+      "quantidade": "100",
+      "calorias": "240",
+      "tipo": "Jantar"
+    },
+    {
+      "nome": "Iorgute, natural, desnatado",
+      "quantidade": "100",
+      "calorias": "41",
+      "tipo": "Ceia"
+    }
+  ],
   "horarios": [
     {
       "id": 1,
