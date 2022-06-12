@@ -37,12 +37,47 @@ function FoodForm({ handleSubmit, alimentoData, acionar, closeModal }) {
                 <h2>Adicionar alimento</h2>
                 <p>Preencha as informações a baixo para adicionar um alimento ao cardápio</p>
                 <div className={styles.input_container}>
-                    <Input type="text" text="Nome do alimento:" name="nome" placeholder="Buscar nome do alimento" handleOnChange={handleChange} value={alimento.nome ? alimento.nome : ''} required />
-                    <Input type="number" text="Quantidade (em g):" name="quantidade" placeholder="Ex.: 100" handleOnChange={handleChange} value={alimento.quantidade ? alimento.quantidade : ''} required />
-                    <Input type="number" text="Calorias (Kcal):" name="calorias" placeholder="Ex.: 350" handleOnChange={handleChange} value={alimento.calorias ? alimento.calorias : ''} required />
-                    <Select name="horario_id" text="Selecione o horário" options={horarios} handleOnChange={handleHorario} value={alimento.tipo ? alimento.tipo : ''} required />
+                    <Input
+                        type="text"
+                        text="Nome do alimento:"
+                        name="nome"
+                        placeholder="Buscar nome do alimento"
+                        handleOnChange={handleChange}
+                        value={alimento.nome ? alimento.nome : ''}
+                        required
+                    />
+                    <Input
+                        type="number"
+                        text="Quantidade (em g):"
+                        name="quantidade"
+                        placeholder="Ex.: 100"
+                        handleOnChange={handleChange}
+                        value={alimento.quantidade ? alimento.quantidade : ''}
+                        required
+                    />
+                    <Input
+                        type="number"
+                        text="Calorias (Kcal):"
+                        name="calorias"
+                        placeholder="Ex.: 350"
+                        handleOnChange={handleChange}
+                        value={alimento.calorias ? alimento.calorias : ''}
+                        required
+                    />
+                    <Select
+                        name="horario_id"
+                        text="Selecione o horário"
+                        options={horarios}
+                        handleOnChange={handleHorario}
+                        value={alimento.tipo ? alimento.tipo : ''}
+                        required
+                    />
                 </div>
-                <button type="submit" className={styles.save_btn} onClick={() => closeModal()}>Salvar alimento</button>
+                <button
+                    type="submit"
+                    className={styles.save_btn}
+                    onClick={() => closeModal()}>Salvar alimento
+                </button>
             </form>
         </div>
     ) : "";

@@ -41,7 +41,12 @@ function Checklist({ alimentoData }) {
         <div className={styles.checklist_completo}>
 
             <div className={styles.checklist_select}>
-                <Select name="tipo_id" options={horarios} handleOnChange={handleHorario} value={tipoSelecionado} />
+                <Select 
+                name="tipo_id" 
+                options={horarios} 
+                handleOnChange={handleHorario} 
+                value={tipoSelecionado} 
+                />
             </div>
 
             <div className={styles.checklist_tabela}>
