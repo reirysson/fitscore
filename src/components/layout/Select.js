@@ -5,7 +5,7 @@ function Select({ text, name, options, handleOnChange, value }) {
             <select
                 name={name}
                 id={name}
-                onChange={handleOnChange}
+                onInput={handleOnChange}
                 value={value || ''}
             >
                 <option disabled>Selecione um horário</option>
