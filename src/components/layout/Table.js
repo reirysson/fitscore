@@ -11,10 +11,10 @@ function Table() {
         setAlimentosFiltrados(listarAlimentos())
     }, [])
 
-    function filtrarTipo(tipo){
+    function filtrarTipo(tipo) {
         if (tipo === "Todos")
             setAlimentosFiltrados(alimentos)
-        else 
+        else
             setAlimentosFiltrados(alimentos.filter(a => a.tipo === tipo))
     }
 
@@ -44,7 +44,7 @@ function Table() {
                             <td className={styles.itens_alimento}>{alimento.calorias}</td>
                         </tr>
                     ))}
-                </tbody>  
+                </tbody>
             </table>
         </div>
     )

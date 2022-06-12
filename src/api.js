@@ -1,14 +1,14 @@
 import API from './db.json'
 
-export function listarAlimentos(){
+export function listarAlimentos() {
     return API.alimentos
-} 
+}
 
-export function listarHorario(){
+export function listarHorario() {
     return API.horarios
 }
 
-export function inserirAlimento(alimento){
+export function inserirAlimento(alimento) {
     API.alimentos.push(alimento)
 }
 

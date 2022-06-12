@@ -3,7 +3,7 @@ import { useCaloriasContext } from '../../context/calorias'
 import styles from './Barra.module.css'
 
 function Barra() {
-    const caloriasState = useCaloriasContext()
+  const caloriasState = useCaloriasContext()
 
   function getVermelhoWidth() {
     const caloria = Math.max(0, caloriasState.caloriaConsumida.caloriaConsumida - caloriasState.metaDiaria.metaCaloria);

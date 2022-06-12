@@ -1,6 +1,6 @@
 import styles from './Checklist.module.css'
 import Select from './Select'
-import { useContext, useEffect,useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { listarAlimentos, listarHorario } from '../../api'
 import verified from '../../img/verified.svg'
 import not from '../../img/not.svg'
@@ -24,20 +24,20 @@ function Checklist({ alimentoData }) {
         filtrarTipo(e.target.options[e.target.selectedIndex].text)
     }
 
-    function filtrarTipo(tipo){
+    function filtrarTipo(tipo) {
         setTipoSelecionado(tipo)
         if (tipo === "Todos")
             setAlimentosFiltrados(alimentos)
-        else 
+        else
             setAlimentosFiltrados(alimentos.filter(a => a.tipo === tipo))
     }
 
-    function consumirCaloria(alimento){
+    function consumirCaloria(alimento) {
         caloriasState.caloriaConsumida.setCaloriaConsumida(caloriasState.caloriaConsumida.caloriaConsumida + +alimento.calorias)
         setAlimentosFiltrados(alimentos.filter(a => a.id !== alimento.id))
     }
 
-    return(
+    return (
         <div className={styles.checklist_completo}>
 
             <div className={styles.checklist_select}>
@@ -52,21 +52,21 @@ function Checklist({ alimentoData }) {
                             <th>Você comeu?</th>
                         </tr>
                     </thead>
-                        <tbody>
-                            {alimentosFiltrados.map((alimento) => (
-                                <tr key={alimento.id}>
-                                    <td>{alimento.nome}</td>
-                                    <td>
-                                        <button onClick={() => consumirCaloria(alimento)}>
-                                            <img src={verified} alt="Icone de marcar que comeu no checkist"/>
-                                        </button> 
-                                        <button onClick={() => setAlimentosFiltrados(alimentos.filter(a => a.id !== alimento.id))}>
-                                            <img src={not} alt="Icone de marcar que não comeu no checklist"/>
-                                        </button>
-                                    </td>
-                                </tr>
-                            ))}
-                        </tbody>
+                    <tbody>
+                        {alimentosFiltrados.map((alimento) => (
+                            <tr key={alimento.id}>
+                                <td>{alimento.nome}</td>
+                                <td>
+                                    <button onClick={() => consumirCaloria(alimento)}>
+                                        <img src={verified} alt="Icone de marcar que comeu no checkist" />
+                                    </button>
+                                    <button onClick={() => setAlimentosFiltrados(alimentos.filter(a => a.id !== alimento.id))}>
+                                        <img src={not} alt="Icone de marcar que não comeu no checklist" />
+                                    </button>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
                 </table>
             </div>
         </div>
