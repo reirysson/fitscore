@@ -54,7 +54,7 @@ function Resumo(){
 
             </div>
             
-            <Meta  closeModal={(() => {setButtonPopup(false)})} acionar={buttonPopup}  setAcionar={setButtonPopup}/>
+            <Meta closeModal={(() => {setButtonPopup(false)})} acionar={buttonPopup}  setAcionar={setButtonPopup}/>
         </div>
     )
 }

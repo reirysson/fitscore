@@ -21,7 +21,7 @@ function Meta({acionar, closeModal}){
                 <h3>Objetivo:</h3>
                 <Input className={styles.popup_input} type="radio" text="Manter a alimentação saudável" name="objetivo" checked/>
                 <Input className={styles.popup_input} type="radio" text="Ter alimentação saudável" name="objetivo"/>
-                <Input className={styles.popup_calorias} type="number" text="Meta de calorias diárias (em Kcal):" name="meta" placeholder="Ex.: 2.000"/>
+                <Input className={styles.popup_calorias} type="number" text="Meta de calorias diárias (em Kcal):" name="meta" placeholder={caloriasState.metaDiaria.metaCaloria}/>
                 <button type="submit" className={styles.save_btn} onClick={() => acionar=(false)}>Salvar nova meta</button>
             </form>
         </div>

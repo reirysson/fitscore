@@ -42,7 +42,7 @@ function FoodForm({handleSubmit, alimentoData, acionar, closeModal}) {
                     <Input type="number" text="Calorias (Kcal):" name="calorias" placeholder="Ex.: 350" handleOnChange={handleChange} value={alimento.calorias ? alimento.calorias : ''} required/>
                     <Select name="horario_id" text="Selecione o horário" options={horarios} handleOnChange={handleHorario} value={alimento.tipo ? alimento.tipo : ''} required/>
                 </div> 
-                <button type="submit" className={styles.save_btn} onClick={() => acionar=(false)}>Salvar alimento</button>
+                <button type="submit" className={styles.save_btn} onClick={() => closeModal()}>Salvar alimento</button>
             </form>
         </div>
     ) : "";
