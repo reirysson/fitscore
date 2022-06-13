@@ -34,7 +34,8 @@ function Checklist({ alimentoData }) {
 
     function consumirCaloria(alimento) {
         caloriasState.caloriaConsumida.setCaloriaConsumida(caloriasState.caloriaConsumida.caloriaConsumida + +alimento.calorias)
-        setAlimentosFiltrados(alimentos.filter(a => a.id !== alimento.id))
+        console.log(alimentosFiltrados)
+        setAlimentosFiltrados(alimentosFiltrados.filter(a => a.id !== alimento.id))
     }
 
     return (
@@ -65,7 +66,7 @@ function Checklist({ alimentoData }) {
                                     <button onClick={() => consumirCaloria(alimento)}>
                                         <img src={verified} alt="Icone de marcar que comeu no checkist" />
                                     </button>
-                                    <button onClick={() => setAlimentosFiltrados(alimentos.filter(a => a.id !== alimento.id))}>
+                                    <button onClick={() => setAlimentosFiltrados(alimentosFiltrados.filter(a => a.id !== alimento.id))}>
                                         <img src={not} alt="Icone de marcar que não comeu no checklist" />
                                     </button>
                                 </td>
