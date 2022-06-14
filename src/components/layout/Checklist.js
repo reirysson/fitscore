@@ -67,7 +67,7 @@ function Checklist({ alimentoData }) {
                                         <img src={verified} alt="Icone de marcar que comeu no checkist" />
                                     </button>
                                     <button onClick={() => setAlimentosFiltrados(alimentosFiltrados.filter(a => a.id !== alimento.id))}>
-                                        <img src={not} alt="Icone de marcar que não comeu no checklist" />
+                                        <img src={not} alt="Icone de apagar alimento do checklist" />
                                     </button>
                                 </td>
                             </tr>
