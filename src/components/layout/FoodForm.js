@@ -76,7 +76,7 @@ function FoodForm({ handleSubmit, alimentoData, acionar, closeModal }) {
                 <button
                     type="submit"
                     className={styles.save_btn}
-                    onClick={() => closeModal()}>Salvar alimento
+                    >Salvar alimento
                 </button>
             </form>
         </div>
